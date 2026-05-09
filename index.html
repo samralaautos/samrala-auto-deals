@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samrala Auto Deals | Professional Used Two-Wheeler Marketplace</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <span><i class="fa-solid fa-phone"></i> +91 7973850653</span>
+                <span><i class="fa-solid fa-envelope"></i> gursimran38281221@gmail.com</span>
+                <span><i class="fa-solid fa-clock"></i> Mon-Sat: 9:00 AM - 8:00 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.facebook.com/share/1GdXHcZdn1/" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/samralaauto?igsh=NWl2MWszdDJsM2d4" target="_blank"
+                    class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://maps.app.goo.gl/YKVBbsacj77pEDwq9" target="_blank" class="social-icon"><i
+                        class="fa-solid fa-location-dot"></i></a>
+                <a href="https://wa.me/917973850653" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Samrala Auto Deals Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Samrala <strong>Auto Deals</strong></h1>
+                    <p>Premium Pre-Owned Vehicles</p>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="javascript:void(0)" data-target="home-section" class="active">Home</a></li>
+                <li><a href="javascript:void(0)" data-target="buy-section">Inventory</a></li>
+                <li><a href="javascript:void(0)" data-target="sell-section">Sell Vehicle</a></li>
+                <li><a href="javascript:void(0)" data-target="services-section">Services</a></li>
+                <li><a href="javascript:void(0)" data-target="testimonials-section">Reviews</a></li>
+                <li><a href="javascript:void(0)" data-target="about-section">About</a></li>
+                <li><a href="javascript:void(0)" data-target="contact-section">Contact</a></li>
+                <li><a href="javascript:void(0)" data-target="admin-section"><i class="fa-solid fa-robot"
+                            style="margin-right: 5px;"></i>Admin AI</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn btn-outline" onclick="navigateTo('buy-section')"><i class="fa-solid fa-search"></i>
+                    Find</button>
+                <div class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home-section" class="page-section active">
+            <div class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="hero-badge">#1 Dealership in Ludhiana</span>
+                    <h1>Discover Your Perfect Ride Today</h1>
+                    <p class="hero-line-1">Experience the thrill of the open road with our premium selection of certified pre-owned two-wheelers.</p>
+                    <p class="hero-line-2">Unbeatable prices, transparent history, and financing available.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" onclick="navigateTo('buy-section')">Browse Inventory
+                            <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="btn btn-highlight btn-large" onclick="navigateTo('sell-section')">Get Valuation
+                            <i class="fa-solid fa-tag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-number">1500+</div>
+                    <div class="stat-label">Happy Riders</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Verified Bikes</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Certified History</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">1hr</div>
+                    <div class="stat-label">Quick Transfer</div>
+                </div>
+            </div>
+
+            <div class="trusted-brands">
+                <p>Trusted by riders looking for</p>
+                <div class="brands-grid">
+                    <span>Royal Enfield</span>
+                    <span>Honda Scooter</span>
+                    <span>Tvs Motor</span>
+                    <span>Bajaj</span>
+                    <span>Hero Motorcomp Ltd</span>
+                </div>
+            </div>
+
+            <div class="features-row">
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper" style="overflow: hidden; padding: 0;">
+                        <img src="https://img.freepik.com/free-vector/grunge-certified-seal-stamp-rubber-look_78370-664.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="Certified Seal" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3>Certified Quality</h3>
+                    <p>Every motorcycle undergoes a rigorous 50-point mechanical evaluation.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper" style="overflow: hidden; padding: 0;">
+                        <img src="https://images.pexels.com/photos/34862508/pexels-photo-34862508.jpeg?cs=srgb&dl=pexels-jakubzerdzicki-34862508.jpg&fm=jpg"
+                            alt="Hassle-Free Paperwork" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3>Hassle-Free Paperwork</h3>
+                    <p>We handle all RTO transfers and documentation for you instantly.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper" style="overflow: hidden; padding: 0;">
+                        <img src="https://media.istockphoto.com/id/1950385900/photo/close-up-of-woman-handing-stack-of-dollars-to-other-person.jpg?s=612x612&w=0&k=20&c=6MSVsi8VbOR-BiZHsexYt4pHVtph9wK6DcaxWWy3xMs="
+                            alt="Instant Cash" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3>Instant Cash</h3>
+                    <p>Get paid on the spot when you choose to sell your vehicle to us directly.</p>
+                </div>
+            </div>
+
+            <!-- Featured Petrol Category at Bottom -->
+            <div class="home-featured-section"
+                style="margin-top: 4rem; padding-top: 4rem; border-top: 1px solid rgba(255,255,255,0.05);">
+                <div class="section-header" style="margin-bottom: 3rem;">
+                    <h2 style="font-size: 2.2rem;">Featured Petrol Vehicles</h2>
+                    <div class="header-line"></div>
+                    <p>Our top picks from the petrol-powered collection.</p>
+                </div>
+                <div class="grid" id="featured-petrol-grid">
+                    <!-- Injected via app.js -->
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <button class="btn btn-outline btn-large" onclick="navigateTo('buy-section')">Explore Full Inventory
+                        <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services-section" class="page-section">
+            <div class="section-header">
+                <h2>Our Premium Services</h2>
+                <div class="header-line"></div>
+                <p>Beyond buying and selling, we offer comprehensive services to fulfill all your needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://img.republicworld.com/all_images/car-loan-1747907934563-16_9.webp"
+                        alt="Financing">
+                    <div class="service-content">
+                        <h3>Easy Financing</h3>
+                        <p>We partner with top banks to offer low-interest EMIs with minimal documentation and same-day
+                            approval.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.hindustantimes.com/auto/img/2023/09/28/600x338/1234_1674800137519_1695887161971.jpg"
+                        alt="Insurance">
+                    <div class="service-content">
+                        <h3>Comprehensive Insurance</h3>
+                        <p>Protect your investment with instant policy issuance and hassle-free claim support from major
+                            providers.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://priceindia.in/wp-content/uploads/2025/04/two-wheeler-after-sales-service-support.jpg"
+                        alt="Maintenance">
+                    <div class="service-content">
+                        <h3>After-Sales Service</h3>
+                        <p>Discounted maintenance packages and genuine spare parts guarantee to keep your bike running
+                            like new.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials-section" class="page-section bg-alt">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <div class="header-line"></div>
+                <p>Don't just take our word for it—read reviews from our satisfied community.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></div>
+                    <p>"Sold my old Pulsar here and got an amazing price. The paperwork was handled seamlessly within
+                        hours. Highly professional staff!"</p>
+                    <div class="author">
+                        <div class="avatar">GS</div>
+                        <div class="author-info">
+                            <h4>Gurpreet Singh</h4>
+                            <span>Sold Bajaj Pulsar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i></div>
+                    <p>"I bought an Activa 6G for my daily commute. It looked brand new and runs perfectly. The 6-month
+                        warranty gave me great peace of mind."</p>
+                    <div class="author">
+                        <div class="avatar">MK</div>
+                        <div class="author-info">
+                            <h4>Manpreet Kaur</h4>
+                            <span>Bought Honda Activa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></div>
+                    <p>"The best dealership in Samrala hands down. They arranged my loan within 4 hours. Extremely
+                        transparent pricing."</p>
+                    <div class="author">
+                        <div class="avatar">RS</div>
+                        <div class="author-info">
+                            <h4>Rajeev Sharma</h4>
+                            <span>Bought Royal Enfield</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buy Section -->
+        <section id="buy-section" class="page-section">
+            <div class="section-header">
+                <h2>Our Premium Inventory</h2>
+                <div class="header-line"></div>
+                <p>Browse our extensive collection of certified used two-wheelers.</p>
+            </div>
+
+            <div class="filters-container">
+                <div class="filters">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="search-input" placeholder="Search by brand, model, etc...">
+                    </div>
+                    <select id="type-filter" class="custom-select">
+                        <option value="all">Category: All Types</option>
+                        <option value="petrol">Petrol Vehicles</option>
+                        <option value="ev">Electric Vehicles (EV)</option>
+                    </select>
+                    <select id="sort-select" class="custom-select">
+                        <option value="default">Sort by: Recommended</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Year: Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid" id="vehicles-grid">
+                <!-- Vehicles injected via app.js -->
+                <div class="loader"><i class="fa-solid fa-circle-notch fa-spin"></i> Loading inventory...</div>
+            </div>
+        </section>
+
+        <!-- Sell Section -->
+        <section id="sell-section" class="page-section bg-alt">
+            <div class="section-header">
+                <h2>Sell Your Two-Wheeler</h2>
+                <div class="header-line"></div>
+                <p>Get a fair market valuation instantly and list your vehicle in our premium directory.</p>
+            </div>
+
+            <div class="form-container">
+                <!-- Hidden iframe for background submission -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                <form id="sell-form" action="https://formsubmit.co/gursimran38281221@gmail.com" method="POST"
+                    enctype="multipart/form-data" target="hidden_iframe">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="New Vehicle Listing - Samrala Auto Deals">
+                    <input type="hidden" name="_next" value="https://samrala-auto-deals.netlify.app/success.html">
+                    <!-- IMPORTANT: You must check your email for a confirmation from FormSubmit.co and click ACTIVATE for the first submission to work! -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="brand">Make / Brand <span class="required">*</span></label>
+                            <input type="text" id="brand" name="brand" required placeholder="e.g. Royal Enfield">
+                        </div>
+                        <div class="form-group">
+                            <label for="model">Model Name <span class="required">*</span></label>
+                            <input type="text" id="model" name="model" required placeholder="e.g. Classic 350">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="year">Registration Year <span class="required">*</span></label>
+                            <input type="number" id="year" name="year" required min="1990" max="2026"
+                                placeholder="e.g. 2019">
+                        </div>
+                        <div class="form-group">
+                            <label for="kilometers">Kilometers Driven <span class="required">*</span></label>
+                            <input type="number" id="kilometers" name="kilometers" required min="0"
+                                placeholder="e.g. 15000">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="seller-name">Your Full Name <span class="required">*</span></label>
+                            <input type="text" id="seller-name" name="seller_name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="seller-phone" name="seller_phone" required placeholder="e.g. +91 9876543210">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Expected Selling Price (₹) <span class="required">*</span></label>
+                        <input type="number" id="price" name="price" required min="1000" placeholder="e.g. 85000">
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Upload Vehicle Image <span class="optional">(Optional)</span></label>
+                        <div class="file-input-wrapper">
+                            <input type="file" id="image" name="attachment" accept="image/*">
+                            <div class="file-input-label">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <span>Choose an image or drag & drop (optional)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-terms">
+                        <input type="checkbox" id="agree" required>
+                        <label for="agree">I agree to the <a href="#" onclick="navigateTo('terms-section')">Terms of
+                                Service</a> and confirm the details are accurate.</label>
+                    </div>
+                    <div id="sell-status-container" style="margin-top: 1.5rem;">
+                        <button type="button" class="btn btn-primary submit-btn btn-large" style="width: 100%;"
+                            onclick="submitSell('email')">Submit Details & Get Valuation <i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="page-section">
+            <div class="section-header">
+                <h2>About Samrala Auto Deals</h2>
+                <div class="header-line"></div>
+                <p>Your trusted automotive partner since 2010.</p>
+            </div>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=800"
+                        alt="About Us">
+                    <div class="experience-badge">
+                        <span class="num">15+</span>
+                        <span class="text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Setting the Standard in Used Two-Wheelers</h3>
+                    <p>Founded in the heart of Samrala, Punjab, we are dedicated to revolutionizing the pre-owned
+                        vehicle market. We recognized a desperate need for transparency and trust in the local
+                        automobile industry.</p>
+                    <p>Whether you're looking for an economical scooter for daily commutes or a premium motorcycle for
+                        weekend touring, we have meticulously curated our inventory to suit every lifestyle and budget.
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-check"></i> 5000+ Happy Customers</li>
+                        <li><i class="fa-solid fa-check"></i> 100% Verified Vehicles</li>
+                        <li><i class="fa-solid fa-check"></i> Transparent Pricing</li>
+                        <li><i class="fa-solid fa-check"></i> Expert Mechanic Support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section" class="page-section bg-alt">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="header-line"></div>
+                <p>We'd love to hear from you. Visit our showroom or send us a message.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info-cards">
+                    <div class="info-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Visit Us</h3>
+                        <p>Shop no 19-55 Model Town<br>Harnam Nagar, Ludhiana 141003</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <h3>Call Us</h3>
+                        <p>+91 7973850653</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Saturday<br>9:00 AM - 8:00 PM (Sun Closed)</p>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <form id="contact-form" action="https://formsubmit.co/gursimran38281221@gmail.com" method="POST"
+                        target="hidden_iframe">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Website Inquiry - Samrala Auto Deals">
+                        <input type="hidden" name="_next" value="https://samrala-auto-deals.netlify.app/success.html">
+                        <!-- IMPORTANT: Check your email to ACTIVATE FormSubmit if you haven't yet! -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="contact-name" name="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="contact-email" name="email" required
+                                    placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject <span class="required">*</span></label>
+                            <input type="text" id="contact-subject" name="subject" required
+                                placeholder="What is this regarding?">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message <span class="required">*</span></label>
+                            <textarea id="contact-message" name="message" required placeholder="How can we help you?"
+                                style="min-height: 150px; resize: vertical;"></textarea>
+                        </div>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                            <button type="button" class="btn btn-primary submit-btn btn-large" style="flex: 1;"
+                                onclick="submitContact('whatsapp')">Send via WhatsApp <i
+                                    class="fa-brands fa-whatsapp"></i></button>
+                            <button type="button" class="btn btn-secondary submit-btn btn-large" style="flex: 1;"
+                                onclick="submitContact('email')">Send via Email <i
+                                    class="fa-solid fa-envelope"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Section -->
+        <section id="privacy-section" class="page-section">
+            <div class="section-header">
+                <h2>Privacy Policy</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="legal-content">
+                <h3>1. Information Collection</h3>
+                <p>We collect personal information that you voluntarily provide to us when registering on the Services,
+                    expressing an interest in obtaining information about us, or otherwise contacting us.</p>
+                <h3>2. How We Use Your Information</h3>
+                <p>We process your personal information for a variety of reasons, depending on how you interact with our
+                    Services, including facilitating account creation, responding to inquiries, and sending
+                    administrative details.</p>
+            </div>
+        </section>
+
+        <!-- Terms Section -->
+        <section id="terms-section" class="page-section">
+            <div class="section-header">
+                <h2>Terms of Service</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="legal-content">
+                <h3>1. Agreement to Terms</h3>
+                <p>These Terms of Service constitute a legally binding agreement made between you and Samrala Auto
+                    Deals. By accessing the site, you have read, understood, and agreed to be bound by all of these
+                    terms.</p>
+                <h3>2. Intellectual Property Rights</h3>
+                <p>Unless otherwise indicated, the Site is our proprietary property and all source code, databases,
+                    functionality, software, website designs, text, photographs, and graphics are owned or controlled by
+                    us.</p>
+            </div>
+        </section>
+
+        <!-- Admin AI Section -->
+        <section id="admin-section" class="page-section bg-alt">
+            <div class="dashboard-wrapper">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-header">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <span>Samrala <strong>Admin</strong></span>
+                    </div>
+                    <ul class="sidebar-nav">
+                        <li class="active"><a href="#"><i class="fa-solid fa-chart-pie"></i> Overview</a></li>
+                        <li><a href="#"><i class="fa-solid fa-boxes-stacked"></i> Inventory</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> CRM Leads</a></li>
+                        <li><a href="#" onclick="navigateTo('home-section'); return false;"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="main-content">
+                    <header class="top-nav">
+                        <div class="greeting">
+                            <h2>Welcome back, Boss! 👋</h2>
+                            <p>Here is what's happening with your dealership today.</p>
+                        </div>
+                        <div class="user-profile">
+                            <img src="https://ui-avatars.com/api/?name=Owner&background=ff6b00&color=fff"
+                                alt="Owner Avatar">
+                        </div>
+                    </header>
+
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                            <div class="stat-details">
+                                <h3 id="total-vehicles">0</h3>
+                                <p>Active Vehicles</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                            <div class="stat-details">
+                                <h3 id="total-value">₹0</h3>
+                                <p>Total Inventory Value</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-tags"></i></div>
+                            <div class="stat-details">
+                                <h3 id="avg-price">₹0</h3>
+                                <p>Avg. Asking Price</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Section -->
+                    <div class="ai-section">
+                        <div class="ai-header">
+                            <i class="fa-solid fa-robot"></i>
+                            <h3>Llama 3 Business Operations AI</h3>
+                        </div>
+                        <div class="ai-chat-window" id="chat-window">
+                            <div class="chat-message assistant">
+                                <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                                <div class="bubble">Hello Boss! I'm your AI operations assistant. I have analyzed your
+                                    entire inventory database. How can I help you analyze your business today?</div>
+                            </div>
+                        </div>
+                        <div class="ai-input-area">
+                            <form id="chat-form">
+                                <input type="text" id="chat-input"
+                                    placeholder="e.g. Which bikes should I put on discount to clear stock?" required
+                                    autocomplete="off">
+                                <button type="submit" id="chat-submit"><i class="fa-solid fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Column 1 -->
+            <div class="footer-col footer-about">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                    <div class="logo-text">
+                        <h2>Samrala <strong>Auto Deals</strong></h2>
+                    </div>
+                </div>
+                <p>The premier destination for highly vetted, premium pre-owned motorcycles and scooters in Punjab.
+                    Transparent pricing, instant financing, and unrivaled customer support.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/1GdXHcZdn1/" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/samralaauto?igsh=NWl2MWszdDJsM2d4" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/917973850653" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col">
+                <h3>Petrol Vehicles</h3>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="navigateTo('buy-section')"><i class="fa-solid fa-chevron-right"></i> Honda
+                            Activa 6G</a></li>
+                    <li><a href="#" onclick="navigateTo('buy-section')"><i class="fa-solid fa-chevron-right"></i> Honda
+                            Grazia</a></li>
+                    <li><a href="#" onclick="navigateTo('buy-section')"><i class="fa-solid fa-chevron-right"></i> TVS
+                            Jupiter 125</a></li>
+                    <li><a href="#" onclick="navigateTo('buy-section')"><i class="fa-solid fa-chevron-right"></i> Honda
+                            Activa 125</a></li>
+                    <li><a href="#" onclick="navigateTo('buy-section')"><i class="fa-solid fa-chevron-right"></i> RE
+                            Hunter 350</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h3>Electric Vehicles (EV)</h3>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="navigateTo('buy-section')"><i class="fa-solid fa-chevron-right"></i> Bajaj
+                            Chetak</a></li>
+                    <li><a href="#" onclick="navigateTo('buy-section')"><i class="fa-solid fa-chevron-right"></i> TVS
+                            iQube</a></li>
+                    <li><a href="#" onclick="navigateTo('buy-section')"><i class="fa-solid fa-chevron-right"></i> TVS
+                            Orbitor</a></li>
+                    <li><a href="#" onclick="navigateTo('buy-section')"><i class="fa-solid fa-chevron-right"></i> Ola S1
+                            Air</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="navigateTo('contact-section')"><i class="fa-solid fa-chevron-right"></i>
+                            Vehicle Financing</a></li>
+                    <li><a href="#" onclick="navigateTo('contact-section')"><i class="fa-solid fa-chevron-right"></i>
+                            Insurance Renewal</a></li>
+                    <li><a href="#" onclick="navigateTo('contact-section')"><i class="fa-solid fa-chevron-right"></i>
+                            Ownership Transfer</a></li>
+                    <li><a href="#" onclick="navigateTo('sell-section')"><i class="fa-solid fa-chevron-right"></i>
+                            Bike Valuation</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col footer-contact-col">
+                <h3>Get In Touch</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>Shop no 19-55 Model Town, Harnam Nagar, Ludhiana 141003</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 7973850653</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>contact@samralaautodeals.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 Samrala Auto Deals. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="javascript:void(0)" onclick="navigateTo('privacy-section')">Privacy Policy</a>
+                    <a href="javascript:void(0)" onclick="navigateTo('terms-section')">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vehicle Details Modal -->
+    <div id="vehicle-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Action Successful!</div>
+
+    <!-- Main Script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
