@@ -1336,9 +1336,6 @@ form {
     .top-bar {
         display: none;
     }
-    .nav-links {
-        display: none;
-    }
     .nav-actions button {
         display: none;
     }
@@ -1601,7 +1598,7 @@ form {
         right: -100%;
         top: 80px;
         flex-direction: column;
-        background: var(--bg-darker);
+        background: rgba(15, 17, 21, 0.95);
         width: 100%;
         height: calc(100vh - 80px);
         transition: 0.3s;
