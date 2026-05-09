@@ -1363,6 +1363,45 @@ form {
         gap: 1rem;
         text-align: center;
     }
+    .dashboard-wrapper {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .sidebar-nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        justify-content: center;
+    }
+    .sidebar-nav li {
+        margin-bottom: 0;
+        padding: 0 0.5rem;
+    }
+    .sidebar-nav a {
+        padding: 0.5rem 1rem;
+    }
+    .top-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .chat-message {
+        max-width: 100%;
+    }
+    .stats-bar {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+    .stat-divider {
+        width: 50%;
+        height: 1px;
+    }
 }
 
 .typing-indicator {
