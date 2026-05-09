@@ -355,9 +355,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!msg) return;
 
             // Replace YOUR_NEW_GROQ_API_KEY with a valid Groq API Key
-            const apiKey = 'YOUR_NEW_GROQ_API_KEY';
+            const apiKey = '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';
 
-            if (apiKey === 'YOUR_NEW_GROQ_API_KEY') {
+            if (apiKey === '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') {
                 alert('Admin AI Error: Please update the Groq API key in js/app.js');
                 addMsg('assistant', 'System Error: API Key missing or revoked. Please update the API key in the code.');
                 return;
